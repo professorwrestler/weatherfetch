@@ -30,7 +30,7 @@ function showShell() {
 // Function to show weather via wttr.in with Axios
 function showWeather() {
   axios
-    .get('https://wttr.in/\?format="%l\n%C%c+%t+%m\n"')
+    .get('https://wttr.in/\?format="%l+%C%c+%t+%m\n"')
     .then((response) => {
       console.log(response.data);
     })
