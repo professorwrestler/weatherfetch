@@ -12,7 +12,7 @@ const totalMemory = Math.floor(os.totalmem() / (1024 * 1024));
 // Get free memory in bytes
 const freeMemory = Math.floor(os.freemem() / (1024 * 1024));
 
-// Function to show shell via a shell command.
+// Function to show shell type via a shell command.
 function showShell() {
   exec("zsh --version", (error, stdout, stderr) => {
     if (error) {
